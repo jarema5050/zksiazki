@@ -7,8 +7,13 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+ <div class="container"> 
+<%=render 'home/header'%>
+<div class="alert alert-info" role="alert">
+  This is a info alert—check it out!
 <%= yield %>
+</div>
+
 
 </body>
 </html>
