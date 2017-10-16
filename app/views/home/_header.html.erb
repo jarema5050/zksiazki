@@ -1,11 +1,12 @@
 <nav class="navbar navbar-dark bg-dark">
-<ul class="nav nav-tabs">
+<ul class="nav justify-content-center">
   <li class="nav-item">
     <a class="nav-link active" href="/">Startowa</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="/home/about">O mnie</a>
   </li>
+
   <% if user_signed_in? %>
   <li class="nav-item"><a class="nav-link" href="/users">Profile Edit</a></li>
   <li class="nav-item"><a class="nav-link" href="/users/sign_out">Sign Out</a></li>
