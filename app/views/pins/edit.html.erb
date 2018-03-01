@@ -1,6 +1,11 @@
-<h1>Edycja pinu</h1>
-
+  <h1>Edycja Pinu</h1>
+<div class="panel panel-default">
+  <div class="panel-body">
 <%= render 'form' %>
+  </div>
+  <div class="panel-footer"><%= link_to 'Pokaż', @pin %> |
+<%= link_to 'Wróć', pins_path %></div>
+</div>
 
-<%= link_to 'Wyświetl', @pin %> |
-<%= link_to 'Wstecz', pins_path %>
+
+    
