@@ -19,7 +19,7 @@
         <td height="40"><%= pin.description %></td></tr>
         <tr>
         <td width="100" height="20"><%= link_to 'Pokaż', pin %></td>
-        <% if pin.id==current_user %>
+        <% if pin.user==current_user %>
         <td width="100" height="20"><%= link_to 'Edytuj', edit_pin_path(pin) %></td>
         <td width="100" height="20"><%= link_to 'Usuń', pin, method: :delete, data: { confirm: 'Jesteś tego pewien?' } %></td>
         <% end %>
