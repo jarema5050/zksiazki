@@ -3,14 +3,16 @@
 <p>
   <div class="panel panel-default">
   <div class="panel-body">
+  <%=image_tag @pin.image.url(:medium)%><br/>
   <strong>Wpis:</strong>
   <%= @pin.description %>
+
 </p>
  </div>
 <% if @pin.user==current_user %>
-  <div class="panel-footer"><%= link_to 'Edytuj', edit_pin_path(@pin) %>
+  <div class="panel-footer"><%= link_to 'Edytuj', edit_pin_path(@pin), class: 'btn btn-primary' %>
   <% end %>
-<%= link_to 'Wróć', pins_path %></div>
+<%= link_to 'Wróć', pins_path, class: 'btn btn-primary' %></div>
 
 </div>
 
