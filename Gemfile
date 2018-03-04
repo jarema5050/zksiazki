@@ -14,6 +14,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'devise', '~> 4.3'
 gem 'paperclip', '~> 5.2', '>= 5.2.1'
+gem 'aws-sdk', '~> 3.0', '>= 3.0.1'
 group :development, :test do
   gem 'byebug'
 end

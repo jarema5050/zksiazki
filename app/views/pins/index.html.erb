@@ -17,7 +17,7 @@
      
     <% @pins.each do |pin| %>
       <tr>
-        <td> <% image_tag pin.image.url(:medium)%></td>
+        <td> <%= image_tag pin.image.url(:medium)%></td>
         <td height="40"><%= pin.description %></td>
         </tr>
         <tr>
